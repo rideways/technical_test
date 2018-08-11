@@ -34,7 +34,7 @@ To fulfil bookings we work with local partners often through APIs. At the end of
 | LUXURY_PEOPLE_CARRIER | 6 |
 | MINIBUS | 16 |
 
-* The Rides team have more than one supplier in most locations. Extend the functionality of the console app to call the APIs of "Eric's Taxis" and "Jeff's Taxis" as well. For each car type choose the cheapest supplier to output.
+* The Rides team have more than one supplier in most locations. Extend the functionality of the console app to call the APIs of "Eric's Taxis" and "Jeff's Taxis" as well. For each car type choose the cheapest supplier to output. Each line of the output should be in the format `{car type} - {supplier} - {price}`
 
 ### Notes
 
