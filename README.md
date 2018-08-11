@@ -1,3 +1,5 @@
+![logo](logo.png)
+
 # BookingGo Techincal Test
 
 We are delighted that you are considering joining us at BookingGo, as part of our recruitment we will be looking at your approach to problem solving and coding.  With this in mind please could you complete the following exercise.
