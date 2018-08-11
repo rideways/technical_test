@@ -52,7 +52,7 @@ To fulfil bookings we work with local partners often through APIs. At the end of
 | Eric's Taxis | https://techtest.rideways.com/eric |
 | Jeff's Taxis | https://techtest.rideways.com/jeff |
 
-Documentation for the APIs can be found at https://technicaltest.docs.apiary.io/#reference
+Documentation for the APIs can be found [here](api.md)
 
 ## Part 2
 Using the code created in Part 1 extend the code to provide the output through a REST API using one of the following languages:
