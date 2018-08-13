@@ -2,30 +2,32 @@
 
 # BookingGo Techincal Test
 
-We are delighted that you are considering joining us at BookingGo, as part of our recruitment we will be looking at your approach to problem solving and coding.  With this in mind please could you complete the following exercise.
+We are delighted that you are considering joining us at BookingGo. As part of our recruitment, we will be looking at your approach to problem solving and coding.  With this in mind, we ask that you complete the following exercise.
 
-Please do not over engineer the solution so keep it simple, the things we are looking for are:
+Please do not over engineer your solution - keep it simple. The things we are looking for are:
 * High quality code
 * Your test approach
 * Problem solving
 
-Please submit your code to us through sharing an open GitHub repository.  
+Please make sure your code compiles and works
 
-Please do make sure your code compiles and works.
+Once complete, you can submit your code to us by sharing an open GitHub repository.
 
 ## Introduction
 
-Our Rides team allow customer to book professional cars and driver across the globe. Typically customers are travelling either to or from an airport, but journeys can be between any two points.
+Our Rides platform allows customers to book professional cars and drivers across the globe. Typically customers are travelling either to or from an airport, but journeys can be between any two points.
 
-To fulfil bookings we work with local partners often through APIs. At the end of this exercise you will built a simple search and fulfilment engine that uses data from suppliers, agregates the data and present it in a form to allow customers to choose the best option for them.
+To fulfil bookings we work with local partners, often through APIs. At the end of this exercise you will have built a simple search and fulfilment engine that can obtain data from suppliers, aggregate this data and present it in a format which allows our customers to choose the best option for them.
 
 ## Part 1
 
-* Build a console app that calls the API of "Dave's Taxis". Print out the search results to the console in descending price order. Each line of the output should be in the format `{car type} - {price}`
+* Build a console application which calls the API of "Dave's Taxis". Print out the search results to the console in descending price order. Each line of the output should be in the format `{car type} - {price}`
 
-    The console app should take pickup and drop off as command line parameters. Both are specified as lat,longs e.g. the pickup location for London Heathrow is `51.470020,-0.454295`
+    The console app should take pickup and drop off as command line parameters. Both are specified as latitude and longitude, e.g. the pickup location for London Heathrow is `51.470020,-0.454295`
 
-* The API has limited functionality and returns options that may not be relevant to the customer. Add functionality to limit output to take into account the maximum number of passenger a car can hold. Add the number of passengers as a parameter, the maximum number of passengers each car type can hold are in the table below.
+* The API has limited functionality, and returns options that may not be relevant to the customer. Add logic to limit the output by taking into account the maximum number of passengers a car can hold. Add the number of passengers to your method as a parameter. 
+    
+    You can find the maximum number of passengers each car type can hold in the table below.
 
 | Car Type | Maximum passengers |
 | - | - |
@@ -36,15 +38,15 @@ To fulfil bookings we work with local partners often through APIs. At the end of
 | LUXURY_PEOPLE_CARRIER | 6 |
 | MINIBUS | 16 |
 
-* The Rides team have more than one supplier in most locations. Extend the functionality of the console app to call the APIs of "Eric's Taxis" and "Jeff's Taxis" as well. For each car type choose the cheapest supplier to output. Each line of the output should be in the format `{car type} - {supplier} - {price}`
+* The Rides team have more than one supplier in most locations. Extend the functionality of the console application to call the APIs of "Eric's Taxis" and "Jeff's Taxis" as well. For each car type, choose the cheapest supplier to output. Each line of the output should be in the format `{car type} - {supplier} - {price}`
 
 ### Notes
 
-* Not every supplier has every car type available to them - you may not get 6 results from a supplier.
+* Not every supplier has every car type available to them - you may not get 6 results from every supplier.
 
-* Supplier API sometimes break, you need to be able to handle this gracefully.
+* Supplier APIs can sometimes break, you need to be able to handle this gracefully.
 
-* Supplier APIs can sometimes be slow. You should give a supplier 2 seconds to respond, if you do not receive a respond within that time you should ignore that supplier.
+* Supplier APIs can sometimes be slow. You should give a supplier 2 seconds to respond, if you do not receive a response within that time frame you should ignore the supplier for that search.
 
 | Supplier | API URL |
 | - | - |
@@ -55,10 +57,10 @@ To fulfil bookings we work with local partners often through APIs. At the end of
 Documentation for the APIs can be found [here](api.md)
 
 ## Part 2
-Using the code created in Part 1 extend the code to provide the output through a REST API using one of the following languages:
+Using the code you have created in Part 1, extend the application to provide the output through a REST API using one of the following languages:
 * PHP
 * JavaScript (Node, Angular are also acceptable)
 * Java
 * Scala
 
-The API should return a json payload.
+Your API should return a json payload.
