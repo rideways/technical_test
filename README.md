@@ -9,7 +9,7 @@ Do not over engineer your solution - keep it simple. The things we are looking f
 * Your test approach
 * Problem solving
 
-Please make sure your code compiles and works
+Please make sure your code compiles and runs
 
 Once complete, you can submit your code to us by sharing an open GitHub repository.
 
