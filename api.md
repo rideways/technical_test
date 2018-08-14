@@ -27,21 +27,25 @@ The Supplier API takes the following query parameters:
 * http status code 200
 
         {
-            "supplier_id": "Dave",
+            "supplier_id": "DAVE",
             "pickup": "51.470020,-0.454295",
             "dropoff": "51.00000,1.0000",
-            options: [
+            "options": [
                 {
                     "car_type": "STANDARD",
-                    "price": 10001
+                    "price": 671808
                 },
                 {
                     "car_type": "EXECUTIVE",
-                    "price": 20000
+                    "price": 375545
                 },
                 {
                     "car_type": "LUXURY",
-                    "price": 30000
+                    "price": 583438
+                },
+                {
+                    "car_type": "MINIBUS",
+                    "price": 37456
                 }
             ]
         }
@@ -51,14 +55,20 @@ The Supplier API takes the following query parameters:
 
 
         {
-            "error_code": 121,
-            "error_reason": "Incorrect parameters"
+            "timestamp": "2018-08-14T13:11:34.937+0000",
+            "status": 400,
+            "error": "Bad Request",
+            "message": "Required String parameter 'pickup' is not present",
+            "path": "/dave"
         }
 
 ### Server Error
 * http status code 500
 
         {
-            "error_code": 1212,
-            "error_reason": "Something has gone wrong"
+            "timestamp": "2018-08-14T13:12:34.072+0000",
+            "status": 500,
+            "error": "Internal Server Error",
+            "message": "Something has gone wrong",
+            "path": "/dave"
         }
