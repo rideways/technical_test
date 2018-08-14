@@ -4,7 +4,7 @@ This is the API specification for the BookingGo technical test.
 
 ## Accessing the API of a supplier
 
-The api can be accessed via the URL `https://techtest.rideway.com/{supplier_id}`
+The api can be accessed via the URL `https://techtest.rideways.com/{supplier_id}`
 
 Valid supplier ids are `dave`, `eric`, `jeff`
 
