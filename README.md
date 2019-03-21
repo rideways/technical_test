@@ -29,6 +29,8 @@ For this tasks below, you will be using three supplier APIs: Dave's Taxis, Eric'
 
 Documentation for the APIs can be found [here](api.md)
 
+**Submissions will be accepted in JavaScript or Java**
+
 ## Part 1
 
 * Build a console application which calls the API of "Dave's Taxis". Print out the search results to the console in descending price order. Each line of the output should be in the format `{car type} - {price}`
@@ -61,10 +63,6 @@ Documentation for the APIs can be found [here](api.md)
 * Supplier APIs can sometimes be slow. You should give a supplier 2 seconds to respond, if you do not receive a response within that time frame you should ignore the supplier for that search.
 
 ## Part 2
-Using the code you created in Part 1, extend the application to provide the output through a REST API using one of the following languages:
-* PHP
-* JavaScript (Node, Angular are also acceptable)
-* Java
-* Scala
+Using the code you created in Part 1, extend the application to provide the output through a REST API. 
 
 Your API should return a json payload.
