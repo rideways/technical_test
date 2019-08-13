@@ -35,7 +35,7 @@ Documentation for the APIs can be found [here](api.md)
 
     The console app should take pickup and drop off locations as command line parameters. Both are specified as `latitude, longitude`, for example the pickup location for London Heathrow is `51.470020,-0.454295`
 
-* The API has limited functionality, and returns options that may not be relevant to the customer. Add logic to limit the output by taking into account the maximum number of passengers a car can hold. Add the number of passengers to your method as a parameter. 
+* The API has limited functionality, and returns options that may not be relevant to the customer. Add logic to limit the output by taking into account the maximum number of passengers a car can hold. Add the number of passengers as a third parameter to your console app and filter the results based on it. 
     
     You can find the maximum number of passengers each car type can hold in the table below.
 
